@@ -27,10 +27,12 @@ namespace AssureGroup
 
             loginBtn.Click += delegate {
                 Intent startLogin = new Intent(this, typeof(BoxSelection));
+                StartActivity(startLogin);
             };
 
             registerBtn.Click += delegate {
-                Intent startLogin = new Intent(this, typeof(Register));
+                Intent register = new Intent(this, typeof(Register));
+                StartActivity(register);
             };
         }
 }

@@ -6,7 +6,8 @@
   <item>
     <bitmap
         android:src="@drawable/luckyboxtext"
-        android:tileMode="disabled"
+        android:background="#FFFFFF"
+			android:tileMode="disabled"
         android:gravity="center"/>
   </item>
 </layer-list>

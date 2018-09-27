@@ -18,6 +18,7 @@ namespace AssureGroup
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.register);
 
             // Create your application here
         }
