@@ -57,9 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Box.cs" />
-    <Compile Include="boxAdapter.cs" />
     <Compile Include="BoxSelection.cs" />
     <Compile Include="LoginActivity.cs" />
+    <Compile Include="Register.cs" />
     <Compile Include="SplashActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,6 +132,14 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\listItem.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\luckyboxtext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\register.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

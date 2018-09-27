@@ -15,12 +15,23 @@ namespace AssureGroup
     [Activity(Label = "loginActivity")]
     public class LoginActivity : Activity
     {
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.login);
 
-            // Create your application here
+            Button loginBtn = FindViewById<Button>(Resource.Id.loginBtn);
+            Button registerBtn = FindViewById<Button>(Resource.Id.registerBtn);
+
+
+            loginBtn.Click += delegate {
+                Intent startLogin = new Intent(this, typeof(BoxSelection));
+            };
+
+            registerBtn.Click += delegate {
+                Intent startLogin = new Intent(this, typeof(Register));
+            };
         }
-    }
+}
 }

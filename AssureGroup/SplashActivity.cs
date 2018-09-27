@@ -5,21 +5,37 @@ using Android.Runtime;
 using Android.Widget;
 using System.Threading;
 using Android.Content;
+using Android.Util;
+using System.Threading.Tasks;
 
 namespace AssureGroup
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true,NoHistory =true)]
+    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.splash);
+        static readonly string TAG = "X:" + typeof(SplashActivity).Name;
 
-            Thread.Sleep(6000);
-            Intent loginIntent = new Intent(this, typeof(LoginActivity));
-            StartActivity(loginIntent);
+        public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
+        {
+            base.OnCreate(savedInstanceState, persistentState);
+            Log.Debug(TAG, "SplashActivity.OnCreate");
+        }
+
+        // Launches the startup task
+        protected override void OnResume()
+        {
+            base.OnResume();
+            Task startupWork = new Task(() => { SimulateStartup(); });
+            startupWork.Start();
+        }
+
+        // Simulates background work that happens behind the splash screen
+        async void SimulateStartup()
+        {
+            Log.Debug(TAG, "Performing some startup work that takes a bit of time.");
+            await Task.Delay(3000); // Simulate a bit of startup work.
+            Log.Debug(TAG, "Startup work is finished - starting MainActivity.");
+            StartActivity(new Intent(Application.Context, typeof(LoginActivity)));
         }
     }
 }

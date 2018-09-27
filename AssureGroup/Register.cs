@@ -12,20 +12,14 @@ using Android.Widget;
 
 namespace AssureGroup
 {
-    [Activity(Label = "BoxSelection")]
-    public class BoxSelection : Activity
+    [Activity(Label = "Register")]
+    public class Register : Activity
     {
-
-        private ListView boxList;
-        private Adapter mAdapter;
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-
-
-           
+            // Create your application here
         }
     }
 }
