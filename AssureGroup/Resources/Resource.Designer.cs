@@ -105,6 +105,22 @@ namespace AssureGroup
 			}
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f0e0000
+			public const int age_array = 2131623936;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -2280,7 +2296,7 @@ namespace AssureGroup
 			public const int add = 2131230750;
 			
 			// aapt resource value: 0x7f0800a2
-			public const int ageTV = 2131230882;
+			public const int ageSpinner = 2131230882;
 			
 			// aapt resource value: 0x7f080058
 			public const int alertTitle = 2131230808;
@@ -3101,6 +3117,9 @@ namespace AssureGroup
 			
 			// aapt resource value: 0x7f09002a
 			public const int action_settings = 2131296298;
+			
+			// aapt resource value: 0x7f09002b
+			public const int agePrompt = 2131296299;
 			
 			// aapt resource value: 0x7f090029
 			public const int app_name = 2131296297;

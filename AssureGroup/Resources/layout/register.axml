@@ -40,8 +40,9 @@
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:text="Last name:"/>
+				
 				<EditText
-					android:inputType="textPassword"
+					android:inputType="textPersonName"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:id="@+id/lastNameTV" />
@@ -57,11 +58,12 @@
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:text="Age:"/>
-				<EditText
-					android:inputType="number"
+				<Spinner
 					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:id="@+id/ageTV" />
+					android:layout_height="match_parent"
+					android:id="@+id/ageSpinner"
+				android:prompt="@string/agePrompt"/>
+
 			</LinearLayout>
 	
 			<!--Email-->
@@ -75,7 +77,7 @@
 					android:layout_width="wrap_content"
 					android:text="Email:"/>
 				<EditText
-					android:inputType="phone"
+					android:inputType="textEmailAddress"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:id="@+id/emailTV" />
@@ -92,7 +94,7 @@
 					android:layout_width="wrap_content"
 					android:text="Password:"/>
 				<EditText
-				android:inputType="textPostalAddress"
+				android:inputType="textPassword"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:id="@+id/passwordTV" />
@@ -112,7 +114,7 @@
 				<EditText
 					android:layout_height="wrap_content"
 					android:layout_width="0dp"
-					android:layout_weight="1"
+					android:layout_weight="1.5"
 					android:focusable="false"
 					android:enabled="false"
 					android:id="@+id/dobTV"/>

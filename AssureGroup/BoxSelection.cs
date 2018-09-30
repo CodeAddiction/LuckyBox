@@ -16,8 +16,7 @@ namespace AssureGroup
     public class BoxSelection : Activity
     {
 
-        private ListView boxList;
-        private Adapter mAdapter;
+       
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
