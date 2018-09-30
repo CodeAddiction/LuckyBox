@@ -2279,6 +2279,9 @@ namespace AssureGroup
 			// aapt resource value: 0x7f08001e
 			public const int add = 2131230750;
 			
+			// aapt resource value: 0x7f0800a2
+			public const int ageTV = 2131230882;
+			
 			// aapt resource value: 0x7f080058
 			public const int alertTitle = 2131230808;
 			
@@ -2351,8 +2354,11 @@ namespace AssureGroup
 			// aapt resource value: 0x7f080054
 			public const int customPanel = 2131230804;
 			
-			// aapt resource value: 0x7f0800a5
-			public const int datePicker1 = 2131230885;
+			// aapt resource value: 0x7f0800a4
+			public const int date_of_birthTV = 2131230884;
+			
+			// aapt resource value: 0x7f0800a6
+			public const int date_select_button = 2131230886;
 			
 			// aapt resource value: 0x7f080062
 			public const int decor_content_parent = 2131230818;
@@ -2378,20 +2384,8 @@ namespace AssureGroup
 			// aapt resource value: 0x7f080012
 			public const int disableHome = 2131230738;
 			
-			// aapt resource value: 0x7f0800a0
-			public const int editText1 = 2131230880;
-			
-			// aapt resource value: 0x7f0800a2
-			public const int editText2 = 2131230882;
-			
-			// aapt resource value: 0x7f0800a1
-			public const int editText3 = 2131230881;
-			
-			// aapt resource value: 0x7f0800a3
-			public const int editText4 = 2131230883;
-			
-			// aapt resource value: 0x7f0800a4
-			public const int editText5 = 2131230884;
+			// aapt resource value: 0x7f0800a5
+			public const int dobTV = 2131230885;
 			
 			// aapt resource value: 0x7f080066
 			public const int edit_query = 2131230822;
@@ -2429,6 +2423,9 @@ namespace AssureGroup
 			// aapt resource value: 0x7f080033
 			public const int fill_vertical = 2131230771;
 			
+			// aapt resource value: 0x7f0800a0
+			public const int firstNameTV = 2131230880;
+			
 			// aapt resource value: 0x7f08003f
 			public const int @fixed = 2131230783;
 			
@@ -2462,6 +2459,9 @@ namespace AssureGroup
 			// aapt resource value: 0x7f080075
 			public const int largeLabel = 2131230837;
 			
+			// aapt resource value: 0x7f0800a1
+			public const int lastNameTV = 2131230881;
+			
 			// aapt resource value: 0x7f080034
 			public const int left = 2131230772;
 			
@@ -2480,8 +2480,8 @@ namespace AssureGroup
 			// aapt resource value: 0x7f080087
 			public const int loginBtn = 2131230855;
 			
-			// aapt resource value: 0x7f0800a7
-			public const int masked = 2131230887;
+			// aapt resource value: 0x7f0800a8
+			public const int masked = 2131230888;
 			
 			// aapt resource value: 0x7f08008f
 			public const int media_actions = 2131230863;
@@ -2524,6 +2524,9 @@ namespace AssureGroup
 			
 			// aapt resource value: 0x7f080086
 			public const int passTV = 2131230854;
+			
+			// aapt resource value: 0x7f0800a3
+			public const int passwordTV = 2131230883;
 			
 			// aapt resource value: 0x7f080038
 			public const int pin = 2131230776;
@@ -2711,8 +2714,8 @@ namespace AssureGroup
 			// aapt resource value: 0x7f08000e
 			public const int view_offset_helper = 2131230734;
 			
-			// aapt resource value: 0x7f0800a6
-			public const int visible = 2131230886;
+			// aapt resource value: 0x7f0800a7
+			public const int visible = 2131230887;
 			
 			// aapt resource value: 0x7f080027
 			public const int withText = 2131230759;

@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Box.cs" />
     <Compile Include="BoxSelection.cs" />
+    <Compile Include="DatePickerFragment.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="Register.cs" />
     <Compile Include="SplashActivity.cs" />

@@ -14,7 +14,8 @@ namespace AssureGroup
 {
     class Box
     {
-        public int boxImage { get; set; }
-        public string boxLabel { get; set; }
+        public int BoxImage { get; set; }
+        public string BoxLabel { get; set; }
+        public int Price { get; set; }
     }
 }
