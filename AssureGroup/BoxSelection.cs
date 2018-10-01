@@ -16,12 +16,13 @@ namespace AssureGroup
     public class BoxSelection : Activity
     {
 
-       
+
+        ListView boxList;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            boxList = FindViewById<ListView>(Resource.Id.boxListView)
 
 
            

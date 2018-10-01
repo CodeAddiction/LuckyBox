@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+	
 	<ImageButton
 		android:id="@+id/boxButton"
 		android:layout_width="wrap_content"
@@ -10,11 +11,18 @@
 		android:background="@android:color/transparent"
 		android:src="@drawable/bronzeBox"/>
 
-		<TextView
+	<TextView
 		android:id="@+id/boxTitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="test"/>
+	
+	<TextView
+		android:id="@+id/boxPrice"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="center"
-			android:text="test"/>
+			android:text="£12"/>
 
 </LinearLayout>
