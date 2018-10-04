@@ -16,6 +16,14 @@ namespace AssureGroup
     {
         public int BoxImage { get; set; }
         public string BoxLabel { get; set; }
-        public int Price { get; set; }
+        public string BoxPrice { get; set; }
+
+        public Box(int boxImage, string boxLabel, string boxPrice)
+        {
+            this.BoxImage = boxImage;
+            this.BoxLabel = boxLabel;
+            this.BoxPrice = boxPrice;
+
+        }
     }
 }

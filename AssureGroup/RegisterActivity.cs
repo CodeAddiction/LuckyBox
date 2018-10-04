@@ -13,7 +13,7 @@ using Android.Widget;
 namespace AssureGroup
 {
     [Activity(Label = "Register")]
-    public class Register : Activity
+    public class RegisterActivity : Activity
     {
 
         TextView _dateDisplay;

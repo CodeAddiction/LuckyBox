@@ -15,53 +15,72 @@ namespace AssureGroup
 {
     class BoxAdapter : BaseAdapter<Box>
     {
+            public List<Box> mItems;
+            public Context mContext;
 
-        List<Box> BoxList;
-
-        public BoxAdapter(List<Box> Boxes)
-        {
-            this.BoxList = Boxes;
-        }
-
-        public override Box this[int position]
-        {
-            get
+            public BoxAdapter(Context context, List<Box> items)
             {
-                return BoxList[position];
+                mItems = items;
+                mContext = context;
             }
-        }
 
-        public override int Count
-        {
-            get
+            public override int Count
             {
-                return BoxList.Count;
+                get
+                {
+                    return mItems.Count;
+                }
             }
-        }
 
-        public override long GetItemId(int position)
-        {
-            return position;
-        }
-
-        public override View GetView(int position, View convertView, ViewGroup parent)
-        {
-            var view = convertView;
-
-            if (view == null)
+            public override Box this[int position]
             {
-                view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.listItem, 
-                    
-                var boxImage = view.FindViewById<ImageButton>(Resource.Id.boxButton);
-                var boxLabel = view.FindViewById<TextView>(Resource.Id.boxTitle);
-                var boxPrice = view.FindViewById<TextView>(Resource.Id.boxPrice);
-
-                view.Tag = new ViewHolder() { BoxImage = boxButton, boxLabel = boxLabel, boxPrice = boxPrice}
+                get
+                {
+                    return mItems[position];
+                }
             }
-                var holder = (ViewHolder)view.Tag;
 
-                return View;
+            public override long GetItemId(int position)
+            {
+                return position;
             }
+
+            public override View GetView(int position, View convertView, ViewGroup parent)
+            {
+                View row = convertView;
+
+                if (row == null)
+                {
+                    row = LayoutInflater.From(mContext).Inflate(Resource.Layout.listItem, null, false);
+                }
+
+                ImageView boxIV = row.FindViewById<ImageView>(Resource.Id.boxButton);
+            switch (boxIV.Id)
+            {
+                case 1:
+                    boxIV.SetImageResource(Resource.Drawable.bronzeBox);
+                    break;
+                case 2:
+                    boxIV.SetImageResource(Resource.Drawable.silverBox);
+                    break;
+                case 3:
+                    boxIV.SetImageResource(Resource.Drawable.goldBox);
+                    break;
+            }
+            boxIV.SetImageResource(Resource.Drawable.bronzeBox);
+
+                TextView boxTitleTV = row.FindViewById<TextView>(Resource.Id.boxTitle);
+                boxTitleTV.Text = mItems[position].BoxLabel;
+
+            TextView boxPriceTV = row.FindViewById<TextView>(Resource.Id.boxPrice);
+            boxTitleTV.Text = mItems[position].BoxPrice;
+
+            return row;
+            }
+
+
+
         }
+
+
     }
-}

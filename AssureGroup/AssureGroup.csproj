@@ -58,10 +58,10 @@
   <ItemGroup>
     <Compile Include="Box.cs" />
     <Compile Include="BoxAdapter.cs" />
-    <Compile Include="BoxSelection.cs" />
+    <Compile Include="BoxSelectionActivity.cs" />
     <Compile Include="DatePickerFragment.cs" />
     <Compile Include="LoginActivity.cs" />
-    <Compile Include="Register.cs" />
+    <Compile Include="RegisterActivity.cs" />
     <Compile Include="SplashActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
